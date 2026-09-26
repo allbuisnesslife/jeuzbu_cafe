@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUZBÜ CAFÉ - Café Touba & Réservations Cérémonies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="logo cafe .jpeg" alt="JUZBÜ CAFÉ Logo" class="logo-img">
+                <span class="logo-text">JUZBÜ CAFÉ</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#ceremonies">Cérémonies</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero" style="background-image: url('acceuil.jpeg'); background-size: 120%; background-position: center 30%;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Le Véritable Goût du <span>Café Touba</span></h1>
+            <p class="hero-subtitle">Découvrez notre sélection de cafés d'exception et réservez vos cérémonies en toute simplicité.</p>
+            <div class="hero-buttons">
+                <a href="#produits" class="btn btn-primary">Nos Produits</a>
+                <a href="#ceremonies" class="btn btn-secondary">Réserver une Cérémonie</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#produits"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat-item">
+            <i class="fas fa-coffee"></i>
+            <h3>500+</h3>
+            <p>Clients Satisfaits</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-calendar-check"></i>
+            <h3>200+</h3>
+            <p>Cérémonies Organisées</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-award"></i>
+            <h3>100%</h3>
+            <p>Qualité Garantie</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-truck"></i>
+            <h3>24h</h3>
+            <p>Livraison Rapide</p>
+        </div>
+    </section>
+
+    <!-- Produits Section -->
+    <section id="produits" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos <span>Produits</span></h2>
+                <p>Une sélection de cafés Toubaauthentiques, préparés avec soin et passion</p>
+            </div>
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Sur Place</div>
+                    <div class="product-img">
+                        <img src="cafe touba.jpeg" alt="Café Touba" class="product-img-real">
+                    </div>
+                    <div class="product-info">
+                        <h3>Café Touba</h3>
+                        <p>Gottoyy bopp final, café Touba torréfié artisanalement avec du clou de girofle. Un goût authentique et corsé.</p>
+                        <div class="product-price">
+                            <span class="price">À partir de 50 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://wa.me/221764243371?text=Bonjour%20Jeuwrigne%2C%20je%20souhaite%20commander%20un%20Caf%C3%A9%20Touba%20(sur%20place).%20Prix%20%3A%20%C3%A0%20partir%20de%2050%20FCFA.%20Jajeuf" target="_blank" class="btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">Poudre</div>
+                    <div class="product-img">
+                        <img src="cafe en poudre.jpeg" alt="Café Touba en Poudre" class="product-img-real">
+                    </div>
+                    <div class="product-info">
+                        <h3>Café Touba en Poudre</h3>
+                        <p>Café Touba moulu prêt à préparer. Pratique et rapide, idéal pour tous les moments.</p>
+                        <div class="product-price">
+                            <span class="price">3 000 FCFA</span>
+                            <span class="weight">/ 500g</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn minus" data-action="minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus" data-action="plus">+</button>
+                            </div>
+                            <button class="btn add-to-cart" data-name="Café Touba en Poudre" data-price="3000" data-img="powder1">
+                                <i class="fas fa-cart-plus"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="wass.jpeg" alt="Wass" class="product-img-real">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wass</h3>
+                        <p>Wass à base de thé et menthe. Rafraîchissant et savoureux, parfait pour se détendre.</p>
+                        <div class="product-price">
+                            <span class="price">À partir de 100 FCFA</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://wa.me/221764243371?text=Bonjour%20Jeuwrigne%2C%20je%20souhaite%20commander%20un%20Wass%20(th%C3%A9%20et%20menthe).%20Prix%20%3A%20%C3%A0%20partir%20de%20100%20FCFA.%20Jajeuf" target="_blank" class="btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-badge">Livres</div>
+                    <div class="product-img">
+                        <img src="xassida.png" alt="Xassida" class="product-img-real xassida-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Xassida</h3>
+                        <p>Xassidas de Serigne Touba. Commandez selon vos préférences, le prix dépend du xassida choisi.</p>
+                        <div class="xassida-grid">
+                            <button type="button" class="xassida-card" data-price="3000" data-name="Nourou Darayni">
+                                <span class="xassida-name">Nourou Darayni</span>
+                                <span class="xassida-price">3 000 FCFA</span>
+                            </button>
+                            <button type="button" class="xassida-card" data-price="2500" data-name="Astaghfiroullah Bihi">
+                                <span class="xassida-name">Astaghfiroullah Bihi</span>
+                                <span class="xassida-price">2 500 FCFA</span>
+                            </button>
+                            <button type="button" class="xassida-card" data-price="3500" data-name="Tuhfatou">
+                                <span class="xassida-name">Tuhfatou</span>
+                                <span class="xassida-price">3 500 FCFA</span>
+                            </button>
+                            <button type="button" class="xassida-card" data-price="2000" data-name="Jeuzbu">
+                                <span class="xassida-name">Jeuzbu</span>
+                                <span class="xassida-price">2 000 FCFA</span>
+                            </button>
+                            <button type="button" class="xassida-card" data-price="4000" data-name="Madal Khabiru">
+                                <span class="xassida-name">Madal Khabiru</span>
+                                <span class="xassida-price">4 000 FCFA</span>
+                            </button>
+                            <button type="button" class="xassida-card" data-price="3000" data-name="Matlabul Shifai">
+                                <span class="xassida-name">Matlabul Shifai</span>
+                                <span class="xassida-price">3 000 FCFA</span>
+                            </button>
+                            <button type="button" class="xassida-card" data-price="3500" data-name="Matlabul Fawzayni">
+                                <span class="xassida-name">Matlabul Fawzayni</span>
+                                <span class="xassida-price">3 500 FCFA</span>
+                            </button>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn add-to-cart xassida-btn" data-name="Xassida" data-price="0" data-img="xassida1">
+                                <i class="fas fa-cart-plus"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="apropos" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="cafe en poudre (2).jpeg" alt="JUZBÜ CAFÉ" class="about-img-real">
+                    <div class="experience-badge">
+                        <span class="exp-number">4+</span>
+                        <span class="exp-text">Années<br>d'Expérience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>À Propos de <span>JUZBÜ CAFÉ</span></h2>
+                    <p class="about-lead">Depuis près de 4 ans, JUZBÜ CAFÉ vous propose le meilleur café Touba du Sénégal.</p>
+                    <p>Notre passion pour la qualité nous pousse à sélectionner les meilleurs grains de café et les épices les plus fines pour vous offrir une expérience gustative unique. Chaque sac de café est torréfié artisanalement dans nos ateliers.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>100% Naturel</h4>
+                                <p>Sans additifs chimiques</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Torréfaction Artisanale</h4>
+                                <p>Fait main avec amour</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <div>
+                                <h4>Livraison Rapide</h4>
+                                <p>Partout au Sénégal</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <div>
+                                <h4>Service Client</h4>
+                                <p>Disponible 24h/24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cérémonies Section -->
+    <section id="ceremonies" class="section ceremonies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Réservation <span>Cérémonies</span></h2>
+                <p>Faites de votre événement un moment inoubliable avec JUZBÜ CAFÉ</p>
+            </div>
+            <div class="ceremonies-grid">
+
+                <div class="ceremony-card">
+                    <div class="ceremony-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Baptême</h3>
+                    <p>Célébrez l'arrivée de votre petit avec un service café Touba pour tous vos invités.</p>
+                    <ul class="ceremony-includes">
+                        <li><i class="fas fa-check"></i> Café Touba pour 50 personnes</li>
+                        <li><i class="fas fa-check"></i> Service complet</li>
+                        <li><i class="fas fa-check"></i> Décors personnalisés</li>
+                    </ul>
+                    <div class="ceremony-price">À partir de 50 000 FCFA</div>
+                    <button class="btn btn-primary reserve-btn" data-type="Baptême">Réserver</button>
+                </div>
+
+                <div class="ceremony-card featured">
+                    <div class="ceremony-badge">Populaire</div>
+                    <div class="ceremony-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mariage</h3>
+                    <p>Rendez votre jour spécial encore plus mémorable avec notre service café Touba exclusif.</p>
+                    <ul class="ceremony-includes">
+                        <li><i class="fas fa-check"></i> Café Touba pour 200 personnes</li>
+                        <li><i class="fas fa-check"></i> Service premium</li>
+                        <li><i class="fas fa-check"></i> Décors luxe</li>
+                        <li><i class="fas fa-check"></i> Wass inclus</li>
+                    </ul>
+                    <div class="ceremony-price">À partir de 150 000 FCFA</div>
+                    <button class="btn btn-primary reserve-btn" data-type="Mariage">Réserver</button>
+                </div>
+
+                <div class="ceremony-card">
+                    <div class="ceremony-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Conférence</h3>
+                    <p>Offrez à vos participants une pause café Touba lors de vos événements professionnels.</p>
+                    <ul class="ceremony-includes">
+                        <li><i class="fas fa-check"></i> Café Touba pour 100 personnes</li>
+                        <li><i class="fas fa-check"></i> Service professionnel</li>
+                        <li><i class="fas fa-check"></i> Setup moderne</li>
+                    </ul>
+                    <div class="ceremony-price">À partir de 75 000 FCFA</div>
+                    <button class="btn btn-primary reserve-btn" data-type="Conférence">Réserver</button>
+                </div>
+
+                <div class="ceremony-card">
+                    <div class="ceremony-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <h3>Maouloud</h3>
+                    <p>Célébrez le Maouloud avec du café Touba traditionnel pour toute la communauté.</p>
+                    <ul class="ceremony-includes">
+                        <li><i class="fas fa-check"></i> Café Touba pour 300 personnes</li>
+                        <li><i class="fas fa-check"></i> Service communautaire</li>
+                        <li><i class="fas fa-check"></i> Décoration festive</li>
+                    </ul>
+                    <div class="ceremony-price">À partir de 100 000 FCFA</div>
+                    <button class="btn btn-primary reserve-btn" data-type="Maouloud">Réserver</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Avis Section -->
+    <section id="avis" class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que disent nos <span>Clients</span></h2>
+                <p>La satisfaction de nos clients est notre plus grande fierté</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Le meilleur café Touba que j'ai jamais goûté ! Le service pour le mariage de ma fille était impeccable."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <h4>Fatou Diallo</h4>
+                                <span>Mariage - Dakar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"J'ai réservé pour le baptême de mon fils, tout était parfait. Les invités ont adoré le café Touba !"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <h4>Moussa Ndiaye</h4>
+                                <span>Baptême - Thiès</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"La qualité du café est exceptionnelle et la livraison est toujours rapide. Je recommande vivement !"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <h4>Aïssatou Sow</h4>
+                                <span>Client Régulier - Saint-Louis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn next" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-<span>nous</span></h2>
+                <p>Nous sommes à votre écoute pour toute question ou commande</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Sangalkam, au niveau du carrefour (garage)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+221 76 424 33 71</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@jeuzboucafe.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun - Sam: 8h00 - 20h00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" placeholder="+221 7X XXX XX XX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" required>
+                            <option value="">Choisir un sujet</option>
+                            <option value="commande">Commande de café</option>
+                            <option value="reservation">Réservation cérémonie</option>
+                            <option value="partenariat">Partenariat</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Envoyer le Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo cafe .jpeg" alt="JUZBÜ CAFÉ" class="logo-img">
+                        <span>JUZBÜ CAFÉ</span>
+                    </div>
+                    <p>Votre destination pour le meilleur café Touba du Sénégal. Qualité, tradition et passion depuis près de 4 ans.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#ceremonies">Cérémonies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="#produits">Café Touba</a></li>
+                        <li><a href="#produits">Café Touba en Poudre</a></li>
+                        <li><a href="#produits">Wass (thé et menthe)</a></li>
+                        <li><a href="#produits">Xassida</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Cérémonies</h4>
+                    <ul>
+                        <li><a href="#ceremonies">Baptême</a></li>
+                        <li><a href="#ceremonies">Mariage</a></li>
+                        <li><a href="#ceremonies">Conférence</a></li>
+                        <li><a href="#ceremonies">Maouloud</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JUZBÜ CAFÉ. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Mon Panier</h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Votre panier est vide</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">0 FCFA</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <i class="fas fa-credit-card"></i> Commander
+            </button>
+        </div>
+    </div>
+
+    <!-- Reservation Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="reservationModal">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Réservation - <span id="modalCeremonyType"></span></h3>
+            </div>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="resName">Nom complet</label>
+                    <input type="text" id="resName" placeholder="Votre nom" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resPhone">Téléphone</label>
+                        <input type="tel" id="resPhone" placeholder="+221 7X XXX XX XX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resEmail">Email</label>
+                        <input type="email" id="resEmail" placeholder="Votre email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resDate">Date de l'événement</label>
+                        <input type="date" id="resDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resGuests">Nombre d'invités</label>
+                        <input type="number" id="resGuests" placeholder="Ex: 100" min="10" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="resAddress">Adresse / Lieu</label>
+                    <input type="text" id="resAddress" placeholder="Lieu de l'événement" required>
+                </div>
+                <div class="form-group">
+                    <label for="resDetails">Détails supplémentaires</label>
+                    <textarea id="resDetails" rows="3" placeholder="Précisez vos besoins..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-check-circle"></i> Confirmer la Réservation
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Produit ajouté au panier !</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
